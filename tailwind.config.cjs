@@ -34,7 +34,8 @@ module.exports = {
        'background-16': '#323050',
        'background-17': '#C70039',
        'background-18': '#900C3E',
-       'background-19': '#900C3E',
+       'background-19': '#34735C',
+       'background-20': '#36D98D',
 
     },
     extend: {},
