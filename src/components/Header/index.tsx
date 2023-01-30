@@ -1,4 +1,4 @@
-import { Border, HeaderText } from "./styled";
+import { Border, HeaderButton } from "./styled";
 
 
 export function Header(){
@@ -20,6 +20,9 @@ export function Header(){
   <a  className="text-left   text-bege-escuro text-2xl">
     Hey! I'm gabriel I'm 18  old I'm a stundent  computer science  . I'm addicted to learning about technologies and programming languages and their impact on the world and their elaboration process to achieve a better world for us through technology.
   </a>
+
+
+  <HeaderButton>Send mail</HeaderButton>
 
   </p>
 </div>
