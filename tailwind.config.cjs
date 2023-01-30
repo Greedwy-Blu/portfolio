@@ -20,6 +20,7 @@ module.exports = {
       'bege-escuro-3': '#D9B9AD',
       'cinza-claro':'#B0BFB5',
       'cinza-escuro': '#4A5559',
+      'yellow-bege': '#F2C36B',
        'color': '#1D2326',
        'color-2': '#071226',
        'color-3': '#011826',

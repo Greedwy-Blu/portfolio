@@ -22,7 +22,7 @@ export function Header(){
   </a>
 
 
-  <HeaderButton>Send mail</HeaderButton>
+  <HeaderButton>SEND EMAIL</HeaderButton>
 
   </p>
 </div>

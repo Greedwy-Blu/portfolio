@@ -1,3 +1,6 @@
+import  image from "../../assets/gears.svg"
+
+
 const navigation = [
   { name: 'Product', href: '#' },
   { name: 'Features', href: '#' },
@@ -13,6 +16,7 @@ export function Navbar(){
     <div className="isolate  ">
 <nav className=" flex items-center md:justify-center mt-5 ">
           <div className="flex flex-1">
+            <img src={image} className="w-9 h-9 ml-2 object-center"/>
             <a href="#" className="text-xl  text-cinza-claro ml-2 font-mono">
               Gabriel Oliveira
 
