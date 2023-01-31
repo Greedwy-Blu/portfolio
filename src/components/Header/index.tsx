@@ -89,9 +89,19 @@ export function Header(){
 
 
                 <div className="mt-2 border-t w-full border-bege-escuro">
+
                   <p className="text-sm text-gray-500 pt-2 w-full">
-                    This is a dialog box
+                  <input type="text" className="w-96 h-10  bg-[#015d6b] border-none"/>
                   </p>
+
+                  <p className="text-sm text-gray-500 pt-2">
+                  <input type="email" className="w-96 h-10  bg-[#015d6b] border-none"/>
+                  </p>
+
+                  <p className="text-sm text-gray-500 pt-2 w-full">
+                  <input type="textarea" className="w-96 h-40  bg-[#015d6b] border-none"/>
+                  </p>
+
                 </div>
 
 
