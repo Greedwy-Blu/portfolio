@@ -12,7 +12,7 @@ const navigation = [
 export function Navbar(){
   return(
 
-    <div className="isolate  ">
+    <header className="isolate  ">
 <nav className=" flex items-center md:justify-center mt-5 ">
           <div className="flex flex-1">
             <img src={image} className="w-9 h-9 ml-2 object-center"/>
@@ -35,7 +35,7 @@ export function Navbar(){
 
 
 
-    </div>
+    </header>
 
   )
 }
