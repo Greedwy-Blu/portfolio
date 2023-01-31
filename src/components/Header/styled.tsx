@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import  imageProfile from "../../assets/profile-3.png"
+import  imageProfile from "../../assets/profile-4.png"
 
 
 export const HeaderButton = styled.button`
@@ -65,10 +65,11 @@ border-radius: 137px 137px 154px 154px;
   export const ImgProfile = styled.div`
 
  background-image: url(${imageProfile});
- height: 413px;
+ height: 350px;
 
- background-position: center;
+ background-position: ;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
   `;
