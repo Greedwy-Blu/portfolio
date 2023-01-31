@@ -41,7 +41,7 @@ export function Header(){
 
 <div className="mt-16 ">
 
-<Border className="overflow-auto">
+<Border className="overflow-auto da ">
 <ImgProfile className="translate-y-40 "/>
 </Border>
 
