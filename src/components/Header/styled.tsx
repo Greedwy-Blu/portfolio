@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import  imageProfile from "../../assets/profile-4.png"
+import  imageProfile from "../../assets/profile.png"
 
 
 export const HeaderButton = styled.button`
