@@ -1,6 +1,6 @@
 import  JSX  from "react"
 
-export  const  Modal = ({ isOpen, setModalOpen, children }) => {
+export  const  Modal = ({ isOpen, setModalOpen, children }:any) => {
 
   if (isOpen) {
   return(
@@ -22,5 +22,6 @@ export  const  Modal = ({ isOpen, setModalOpen, children }) => {
   )
 
   }
+  return null
 
 }

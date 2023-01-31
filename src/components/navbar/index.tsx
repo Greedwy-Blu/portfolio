@@ -17,7 +17,7 @@ export function Navbar(){
           <div className="flex flex-1">
             <img src={image} className="w-9 h-9 ml-2 object-center"/>
             <a href="#" className="text-xl  text-cinza-claro ml-2 font-mono">
-              Gabriel Oliveira
+              GabrielOliveira
 
             </a>
           </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Border, HeaderButton } from "./styled";
+import { Border, HeaderButton, ImgProfile } from "./styled";
 import  {Modal}  from "../Modal";
 
 export function Header(){
@@ -8,8 +8,8 @@ export function Header(){
 
 
   return(
-<div className=" mx-auto  overflow-hidden ">
 
+<div className=" mx-auto  overflow-hidden ">
 
 <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
         Conteúdo do modal
@@ -39,10 +39,15 @@ export function Header(){
   </p>
 </div>
 
+<div className="mt-16 ">
 
-<div className="mt-16">
+<Border>
 
-<Border/>
+
+<ImgProfile className=""/>
+
+  </Border>
+
 
 </div>
 
