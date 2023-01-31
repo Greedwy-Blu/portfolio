@@ -1,27 +1,32 @@
-import  JSX  from "react"
 
-export  const  Modal = ({ isOpen, setModalOpen, children }:any) => {
+import { Button, Modal } from 'antd';
+const Modals = ({isModalOpen, setIsModalOpen}:any) => {
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
 
-  if (isOpen) {
-  return(
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
 
-<div>
-
-
-<div>
-          <div style={{ cursor: 'pointer'}} onClick={setModalOpen}>
-            x
-          </div>
-          <div>{children}</div>
-          <button onClick={setModalOpen}>Fechar</button>
-</div>
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
 
-</div>
+  return (
+
+    <>
+
+    <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+      <p>Some contents...</p>
+      <p>Some contents...</p>
+      <p>Some contents...</p>
+    </Modal>
+  </>
 
   )
 
-  }
-  return null
+};
 
-}
+export default Modals;
