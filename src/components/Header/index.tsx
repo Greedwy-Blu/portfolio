@@ -58,17 +58,38 @@ export function Header(){
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="inline-block w-full max-w-lg p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-color-12 shadow-lg rounded-sm">
+              <div className="inline-block w-full max-w-lg p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-[#00414b] shadow-lg rounded-sm ">
+
                 <Dialog.Title
                   as="h3"
-                  className="text-lg font-medium leading-6 text-gray-900"
+                  className=""
                 >
-                  Modal
+                  <div className="flex">
+
+                    <div className="text-lg font-medium text-cinza-claro">
+
+                    <a>Send Email</a>
+
+                    </div>
+
+                   <div className="ml-auto">
+
+                  <button
+                    type="button"
+                    className="text-bege-escuro font-extrabold"
+                    onClick={closeModal}
+                  >
+                    X
+                  </button>
+
+                 </div>
+
+                  </div>
                 </Dialog.Title>
 
 
-                <div className="mt-2">
-                  <p className="text-sm text-gray-500 border-t pt-2">
+                <div className="mt-2 border-t w-full border-bege-escuro">
+                  <p className="text-sm text-gray-500 pt-2 w-full">
                     This is a dialog box
                   </p>
                 </div>
