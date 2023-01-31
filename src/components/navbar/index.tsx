@@ -22,7 +22,7 @@ export function Navbar(){
             </a>
           </div>
 
-          <div className="md:hidden lg:flex lg:gap-x-8  mr-2">
+          <div className="md:hidden lg:flex lg:gap-x-8  mr-5">
             {navigation.map((item) => (
               <a key={item.name} href={item.href} className="text-lg text-cinza-claro ">
                 {item.name}

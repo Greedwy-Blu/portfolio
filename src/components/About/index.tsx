@@ -120,20 +120,21 @@ export function Header(){
 <div className="flex items-center w-2/6">
 <p className="not-italic font-bold">
 
-   <a className="inline-block align-text-top text-3xl text-bege-escuro-2 mb-5">
+   <a className="inline-block align-text-top text-3xl text-bege-escuro-2 mb-5 ">
     FULL STACK AND COMPUTER SCIENTIST, EXCITED FOR NEW TECHNOLOGIES
     </a>
 
-  <a  className="text-left   text-bege-escuro text-2xl ">
+  <a  className="text-left   text-bege-escuro text-2xl flow-root">
     Hey! I'm gabriel I'm 18  old I'm a stundent  computer science. I'm dedicate to learning about technologies and programming languages and their impact on the world and their elaboration process to achieve a better world for us through technology.
   </a>
 
-
-  <HeaderButton   onClick={openModal}>
+  <HeaderButton   onClick={openModal} className="flow-root">
     SEND EMAIL
   </HeaderButton>
 
   </p>
+
+
 </div>
 
 <div className="mt-16 ">
