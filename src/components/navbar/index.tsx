@@ -2,10 +2,9 @@ import  image from "../../assets/gears.svg"
 
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-
-  { name: 'Marketplace', href: '#' },
+  { name: 'Frontend', href: '#' },
+  { name: 'Backend', href: '#' },
+  { name: 'Techs', href: '#' },
 
 ]
 
@@ -32,7 +31,7 @@ export function Navbar(){
           </div>
 
             </nav>
-            <div className=" fixed w-full border-b-2 border-bege-escuro mt-5"></div>
+            <div className=" w-full border-b-2 border-bege-escuro mt-5"></div>
 
 
 

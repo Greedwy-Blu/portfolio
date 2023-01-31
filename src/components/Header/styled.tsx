@@ -19,7 +19,7 @@ export const HeaderButton = styled.button`
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  color: #928981;
+  color: #FFFF;
   margin-top: 0.875rem;
 
 
