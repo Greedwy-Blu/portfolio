@@ -2,7 +2,7 @@ export function Footer(){
 
   return(
 
-   <footer className="flex  justify-center items-center w-full h-14 bg-color-3 mt-10">
+   <footer className="flex  justify-center items-center w-full h-14  bg-[#01354996] mt-10">
 
   <div className="flex ">
     <p className="text-2xl text-bege-escuro font-semibold not-italic">Copyright © 2023

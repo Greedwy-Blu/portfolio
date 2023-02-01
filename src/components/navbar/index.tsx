@@ -1,4 +1,6 @@
+import { Transition } from "@headlessui/react";
 import  image from "../../assets/gears.svg"
+import { useEffect, useState } from "react";
 
 
 const navigation = [
@@ -10,6 +12,10 @@ const navigation = [
 
 
 export function Navbar(){
+
+
+
+
   return(
 
     <header className="isolate  ">
@@ -22,13 +28,19 @@ export function Navbar(){
             </a>
           </div>
 
-          <div className="md:hidden lg:flex lg:gap-x-8  mr-5">
+
+
+
+<div className=" flex gap-x-8  mr-5">
             {navigation.map((item) => (
               <a key={item.name} href={item.href} className="text-lg text-cinza-claro ">
                 {item.name}
               </a>
             ))}
           </div>
+
+
+
 
             </nav>
             <div className=" w-full border-b-2 border-bege-escuro mt-5"></div>

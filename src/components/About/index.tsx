@@ -88,7 +88,7 @@ export function Header(){
                 </Dialog.Title>
 
 
-                <div className="mt-2 border-t w-full border-bege-escuro">
+                <div className="mt-2 border-t w-full border-bege-escuro text-bege-escuro">
 
                   <p className="text-sm text-gray-500 pt-2 w-full">
                   <input type="text" className="w-96 h-10  bg-[#015d6b] border-none" placeholder="Subject" />
