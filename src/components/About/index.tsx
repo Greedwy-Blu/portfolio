@@ -91,16 +91,23 @@ export function Header(){
                 <div className="mt-2 border-t w-full border-bege-escuro text-bege-escuro">
 
                   <p className="text-sm text-gray-500 pt-2 w-full">
-                  <input type="text" className="w-96 h-10  bg-[#015d6b] border-none" placeholder="Subject" />
+                  <input type="text" className="w-full h-10  bg-[#015d6b] border-none" placeholder="Subject" />
                   </p>
 
                   <p className="text-sm text-gray-500 pt-2">
-                  <input type="email" className="w-96 h-10  bg-[#015d6b] border-none" placeholder="Email" />
+                  <input type="email" className="w-full  h-10  bg-[#015d6b] border-none" placeholder="Email" />
                   </p>
 
                   <p className="text-sm text-gray-500 pt-2 w-full">
-                  <textarea  className="w-96 h-40  bg-[#015d6b] border-none " placeholder="Message"/>
+                  <textarea  className="w-full  h-40  bg-[#015d6b] border-none " placeholder="Message"/>
                   </p>
+                  <p className="flex justify-end space-x-4 mt-3">
+
+                    <button className="w-24 h-7 bg-bege-escuro-2 text-bege-claro"  onClick={closeModal}>Cancel</button>
+                    <button className="w-24 h-7 bg-bege-escuro-2 text-bege-claro">Submit</button>
+
+                  </p>
+
 
                 </div>
 

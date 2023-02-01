@@ -12,10 +12,13 @@
     "@headlessui/react": "^1.7.8",
     "antd": "^5.1.7",
     "framer-motion": "^8.5.5",
+    "gsap": "^3.11.4",
+    "hover-effect": "^1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "three": "^0.149.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
