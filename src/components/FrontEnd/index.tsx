@@ -56,7 +56,7 @@ const variants = {
 
 export function FrontEnd(){
 
-    const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0)
   const [direction, setDirection] = useState(0)
 
   function nextStep() {
@@ -99,27 +99,46 @@ return(
 
 </div>
 
-<div>
+<div className="flex justify-center">
 
-  <AnimatePresence initial={false} custom={direction}>
+      <div className="translate-x-12 mt-48 ">
+      <a className="text-3xl">Texto exemplo</a>
+      </div>
+
+  <button className='prevButton bg-transparent' onClick={prevStep}>
+        ◀
+  </button>
+
+        <AnimatePresence initial={false} custom={direction}>
           <motion.div
             variants={variants}
             animate='animate'
             initial='initial'
             exit='exit'
-            className='slides'
+            className='slides mt-20 '
             key={images[index]}
             custom={direction}
           >
-            <img src={images[index]} alt="" />
+
+
+
+
+                  <div className="">
+                    <div className="w-[500px] h-[500px] bg-yellow-bege">
+
+                    <img src={images[index]} alt="" className="h-96 w-96"/>
+
+                    </div>
+
+                  </div>
+
+
             </motion.div>
         </AnimatePresence>
-        <button className='prevButton' onClick={prevStep}>
-          ◀
-        </button>
-        <button className='nextButton' onClick={nextStep}>
-          ▶
-        </button>
+
+  <button className='nextButton' onClick={nextStep}>
+        ▶
+  </button>
 
 </div>
 
