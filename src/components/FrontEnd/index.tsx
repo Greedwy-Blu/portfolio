@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react"
 
 import { AnimatePresence, motion } from "framer-motion";
-import overlay from '../../assets/overlay.png'
-import image from '../../assets/profile.png'
-import image2 from '../../assets/Open Doodles - Giant Ice Cream.png'
+
+import image4 from '../../assets/pngegg.png'
+import image3 from '../../assets/undraw_yoga_re_i5ld.svg'
+import image2 from '../../assets/undraw_accept_tasks_re_09mv.svg'
+import image1 from '../../assets/Open Doodles - Giant Ice Cream.png'
 
 
 
@@ -13,22 +15,22 @@ const sliders = [
 
 {
   title: 'ROCKET COFFE',
-  image: image2,
+  image: image1,
   class: ' flex items-center w-[500px] h-[500px] bg-color-17'
 },
 {
   title: 'HIGIA',
-  image: 'https://images.unsplash.com/photo-1658184145200-3358c3338585?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
+  image: image3,
   class: 'w-[500px] h-[500px] bg-color-20'
 },
 {
   title: 'NLW SETUP',
-image: 'https://images.unsplash.com/photo-1658186309018-1e3b880acd0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+image: image2,
 class: 'w-[500px] h-[500px] bg-color-16'
 },
 {
   title: 'POKEDEX',
-  image: 'https://images.unsplash.com/photo-1658193624919-50e49d7847e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+  image: image4,
 
 class: 'w-[500px] h-[500px] bg-color-18'
 }
