@@ -4,6 +4,7 @@ import { Header } from './components/About'
 import { Footer } from './components/Footer'
 import { FrontEnd } from './components/FrontEnd'
 import { Scroll } from './components/scroll'
+import { BackEnd } from './components/BackEnd';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 
 
 <FrontEnd/>
+<BackEnd/>
 <Footer/>
 
 
