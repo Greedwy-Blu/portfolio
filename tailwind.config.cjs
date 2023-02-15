@@ -42,6 +42,12 @@ module.exports = {
        'color-18': '#900C3E',
        'color-19': '#34735C',
        'color-20': '#36D98D',
+       'color-21': '#FFC300',
+       'color-22': '#F29D35',
+       'color-23': '#6C7D8C',
+      'color-23': '#888C03',
+      'color-24': '#177373',
+      'color-25': '#F28F6B',
 
     },
     extend: {},

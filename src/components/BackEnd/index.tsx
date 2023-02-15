@@ -2,10 +2,7 @@ import { useEffect, useRef, useState } from "react"
 
 import { AnimatePresence, motion } from "framer-motion";
 
-import image4 from '../../assets/pngegg.png'
-import image3 from '../../assets/undraw_yoga_re_i5ld.svg'
-import image2 from '../../assets/undraw_accept_tasks_re_09mv.svg'
-import image1 from '../../assets/Open Doodles - Giant Ice Cream.png'
+import imageAPi from '../../assets/icons8-api-64.png'
 import arrowleft from '../../assets/iconmonstr-arrow-left-thin.svg'
 import arrowright from '../../assets/iconmonstr-arrow-right-thin.svg'
 
@@ -15,25 +12,25 @@ const sliders = [
 
 
 {
-  title: 'ROCKET COFFE',
-  image: image1,
-  class: ' flex items-center w-[500px] h-[500px] bg-color-17'
+  title: 'SQL NODE',
+  image: imageAPi,
+  class: ' flex items-center w-[500px] h-[500px] bg-[#D96704]  '
 },
 {
-  title: 'HIGIA',
-  image: image3,
-  class: 'w-[500px] h-[500px] bg-color-20'
+  title: 'CADASTRE CURSOS',
+  image: imageAPi,
+  class: 'flex items-center w-[500px] h-[500px] bg-[#C33A1A]  '
 },
 {
-  title: 'NLW SETUP',
-image: image2,
-class: 'w-[500px] h-[500px] bg-color-16'
+  title: 'NODEJS COM TDD',
+image: imageAPi,
+class: 'flex items-center w-[500px] h-[500px] bg-color-24 '
 },
 {
-  title: 'POKEDEX',
-  image: image4,
+  title: 'GRAPHQL',
+  image: imageAPi,
 
-class: 'w-[500px] h-[500px] bg-color-18'
+class: ' flex items-center w-[500px] h-[500px] bg-color-18'
 }
 
 ]
@@ -137,8 +134,8 @@ return(
         </div>
 
 
-     <button className='prevButton  mr-5 mt-16' onClick={prevStep}>
-     <img src={arrowleft} alt="" className="h-6 w-6"/>
+     <button className='prevButton  lg:mr-5 mt-16' onClick={prevStep}>
+     <img src={arrowleft} alt="" className="h-6 w-6 "/>
 
      </button>
 
@@ -161,7 +158,7 @@ return(
                   <div className="">
                     <div className={bysliderClass(sliders[index])}>
 
-                    <img src={byslider(sliders[index])} alt="" className="h-96 w-96 ml-16"/>
+                    <img src={byslider(sliders[index])} alt="" className="h-48 w-48 ml-32"/>
 
                     </div>
 
@@ -171,8 +168,8 @@ return(
             </motion.div>
         </AnimatePresence>
 
-  <button className='nextButton ml-5 mt-16' onClick={nextStep}>
-  <img src={arrowright} alt="" className="h-6 w-6 "/>
+  <button className='nextButton  ml-5 mt-16' onClick={nextStep}>
+  <img src={arrowright} alt="" className="h-4 w-4  "/>
 
   </button>
 
