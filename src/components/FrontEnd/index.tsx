@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion";
 import overlay from '../../assets/overlay.png'
 import image from '../../assets/profile.png'
-import image2 from '../../assets/gears.svg'
+import image2 from '../../assets/Open Doodles - Giant Ice Cream.png'
 
 
 
@@ -12,20 +12,25 @@ const sliders = [
 
 
 {
-  title: 'dsdfdsfds',
-  image: 'https://images.unsplash.com/photo-1658171757201-41b9aa2b3651?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+  title: 'ROCKET COFFE',
+  image: image2,
+  class: ' flex items-center w-[500px] h-[500px] bg-color-17'
 },
 {
-  title: 'ewfsdda',
+  title: 'HIGIA',
   image: 'https://images.unsplash.com/photo-1658184145200-3358c3338585?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
+  class: 'w-[500px] h-[500px] bg-color-20'
 },
 {
-  title: 'sdafs',
+  title: 'NLW SETUP',
 image: 'https://images.unsplash.com/photo-1658186309018-1e3b880acd0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+class: 'w-[500px] h-[500px] bg-color-16'
 },
 {
-  title: 'sdasdsa',
+  title: 'POKEDEX',
   image: 'https://images.unsplash.com/photo-1658193624919-50e49d7847e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+
+class: 'w-[500px] h-[500px] bg-color-18'
 }
 
 ]
@@ -92,6 +97,10 @@ export function FrontEnd(){
   var bysliderTitle = function(object) {
     return object.title
 };
+var bysliderClass = function(object) {
+  return object.class
+};
+
 
 console.log(byslider(sliders[0]));
 
@@ -121,7 +130,7 @@ return(
 
 
 <div className="translate-x-12 mt-48 ">
-        <a className="text-3xl font-bold text-bege-escuro-2">{bysliderTitle(sliders[index])}</a>
+        <a className="text-3xl font-bold text-yellow-bege">{bysliderTitle(sliders[index])}</a>
         </div>
 
 
@@ -146,9 +155,9 @@ return(
 
 
                   <div className="">
-                    <div className="w-[500px] h-[500px] bg-color-17">
+                    <div className={bysliderClass(sliders[index])}>
 
-                    <img src={byslider(sliders[index])} alt="" className="h-96 w-96"/>
+                    <img src={byslider(sliders[index])} alt="" className="h-96 w-96 ml-16"/>
 
                     </div>
 
