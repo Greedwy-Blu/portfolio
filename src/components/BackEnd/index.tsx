@@ -6,7 +6,8 @@ import image4 from '../../assets/pngegg.png'
 import image3 from '../../assets/undraw_yoga_re_i5ld.svg'
 import image2 from '../../assets/undraw_accept_tasks_re_09mv.svg'
 import image1 from '../../assets/Open Doodles - Giant Ice Cream.png'
-
+import arrowleft from '../../assets/iconmonstr-arrow-left-thin.svg'
+import arrowright from '../../assets/iconmonstr-arrow-right-thin.svg'
 
 
 
@@ -93,13 +94,13 @@ export function BackEnd(){
     setIndex(index - 1)
   }
 
-  var byslider = function(object) {
+  var byslider = function(object:any) {
     return object.image
   };
-  var bysliderTitle = function(object) {
+  var bysliderTitle = function(object:any) {
     return object.title
 };
-var bysliderClass = function(object) {
+var bysliderClass = function(object:any) {
   return object.class
 };
 
@@ -131,13 +132,14 @@ return(
 <div className="flex justify-center mr-40">
 
 
-<div className="translate-x-12 mt-48 ">
+<div className="translate-x-16 mt-48 ">
         <a className="text-3xl font-bold text-yellow-bege">{bysliderTitle(sliders[index])}</a>
         </div>
 
 
-     <button className='prevButton bg-transparent' onClick={prevStep}>
-          ◀
+     <button className='prevButton  mr-5 mt-16' onClick={prevStep}>
+     <img src={arrowleft} alt="" className="h-6 w-6"/>
+
      </button>
 
 
@@ -169,8 +171,9 @@ return(
             </motion.div>
         </AnimatePresence>
 
-  <button className='nextButton' onClick={nextStep}>
-        ▶
+  <button className='nextButton ml-5 mt-16' onClick={nextStep}>
+  <img src={arrowright} alt="" className="h-6 w-6 "/>
+
   </button>
 
 </div>
