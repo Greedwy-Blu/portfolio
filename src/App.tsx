@@ -5,6 +5,7 @@ import { Footer } from './components/Footer'
 import { FrontEnd } from './components/FrontEnd'
 import { Scroll } from './components/scroll'
 import { BackEnd } from './components/BackEnd';
+import { Techs } from './components/Techs';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
 
 <FrontEnd/>
 <BackEnd/>
+<Techs/>
 <Footer/>
 
 
