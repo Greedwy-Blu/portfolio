@@ -158,7 +158,7 @@ return(
                   <div className="">
                     <div className={bysliderClass(sliders[index])}>
 
-                    <img src={byslider(sliders[index])} alt="" className="h-48 w-48 ml-32"/>
+                    <img src={byslider(sliders[index])} alt="" className="h-28 w-28 ml-48"/>
 
                     </div>
 
