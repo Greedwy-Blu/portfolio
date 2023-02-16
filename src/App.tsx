@@ -10,7 +10,7 @@ import { Techs } from './components/Techs';
 function App() {
 
   return (
-    <div>
+    <main>
 
 
 
@@ -27,7 +27,7 @@ function App() {
 <Footer/>
 
 
-    </div>
+    </main>
   )
 }
 
