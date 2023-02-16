@@ -6,6 +6,7 @@ import image4 from '../../assets/pngegg.png'
 import image3 from '../../assets/undraw_yoga_re_i5ld.svg'
 import image2 from '../../assets/undraw_accept_tasks_re_09mv.svg'
 import image1 from '../../assets/Open Doodles - Giant Ice Cream.png'
+import { useEffect, useRef, useState } from "react";
 
 export function Techs() {
   const sliders = [
@@ -17,7 +18,12 @@ export function Techs() {
 
   ];
 
+  const [width, setwidth] =  useState(0)
+  const carousel = useRef()
 
+useEffect(()=>{
+setwidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+},[])
 
 
   return (
@@ -29,14 +35,16 @@ export function Techs() {
         </p>
       </div>
 
-      <div>
-        <motion.div className="overflow-hidden">
-          <motion.div className="flex">
+      <div className="mt-[300px]">
+        <motion.div ref={carousel} className="overflow-hidden" whileTap={{cursor: "grabbing"}}>
+          <motion.div drag="x" dragConstraints={{right: 0, left: -width}} className="flex  justify-center ">
 
             {sliders.map((image) =>{
               return(
-                <motion.div className="w-full h-[500px]">
-                  <img src={image} alt="" className="h-20 w-20" />
+                <motion.div className="w-[500px] h[500px]  " key={image}>
+                  <div className="flex items-center bg-cinza-3 h-64 w-48">
+                  <img src={image} alt="" className="h-32 w-32 " />
+                  </div>
                 </motion.div>
               )
 
