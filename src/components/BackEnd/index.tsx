@@ -27,7 +27,7 @@ image: imageAPi,
 class: 'flex items-center w-[500px] h-[500px] bg-color-24 '
 },
 {
-  title: 'GRAPHQL',
+  title: 'GRAPHQL API',
   image: imageAPi,
 
 class: ' flex items-center w-[500px] h-[500px] bg-color-18'
