@@ -22,7 +22,7 @@ export function Techs() {
   const carousel = useRef()
 
 useEffect(()=>{
-setwidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  setwidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
 },[])
 
 
@@ -42,7 +42,7 @@ setwidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
             {sliders.map((image) =>{
               return(
                 <motion.div className="w-[500px] h[500px]  " key={image}>
-                  <div className="flex items-center bg-cinza-3 h-64 w-48">
+                  <div className="flex items-center bg-cinza-3 h-64 w-48 rounded-tl-[57px] rounded-tr-[57px] rounded-br-[64px] rounded-bl-[64px]">
                   <img src={image} alt="" className="h-32 w-32 " />
                   </div>
                 </motion.div>
