@@ -62,11 +62,14 @@ useEffect(()=>{
 
             {sliders.map((image) =>{
               return(
-                <motion.div className="w-[500px] h[500px] mb-3  mx-3 outline outline-[0.5px] outline-bege-escuro-2 rounded-full p-2 hover:scale-105" key={image}>
-                  <div className="overflow-auto  flex items-end  h-72 w-48 rounded-tl-[100px] rounded-tr-[100px] rounded-br-[94px] rounded-bl-[94px]
-                   outline-color-7 bg-color-19 ">
-                  <img src={image} alt="" className="h-16 w-16 ml-14  mb-2" />
+                <motion.div className="w-[500px] h[500px] mb-3  mx-3 outline outline-[0.5px] outline-bege-escuro-2 rounded-full p-2 hover:scale-105 " key={image}>
+
+
+                  <div className="overflow-auto   flex items-center  h-72 w-48 rounded-tl-[100px] rounded-tr-[100px] rounded-br-[94px] rounded-bl-[94px]
+                   outline-color-7  bg-color-19 shadow ">
+                  <img src={image} alt="" className="h-16 w-16 ml-16 " />
                   </div>
+
                 </motion.div>
               )
 
