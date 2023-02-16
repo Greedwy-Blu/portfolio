@@ -18,23 +18,26 @@ const sliders = [
 {
   title: 'ROCKET COFFE',
   image: image1,
-  class: ' flex items-center w-[500px] h-[500px] bg-color-17'
+  class: ' flex items-center w-[500px] h-[500px] bg-color-17',
+  link: 'https://greedwy-blu.github.io/rocketCoffee/',
 },
 {
   title: 'HIGIA',
   image: image3,
-  class: 'w-[500px] h-[500px] bg-color-20'
+  class: 'w-[500px] h-[500px] bg-color-20',
+  link: 'https://github.com/Greedwy-Blu/higia',
 },
 {
   title: 'NLW SETUP',
 image: image2,
-class: 'w-[500px] h-[500px] bg-color-16'
+class: 'w-[500px] h-[500px] bg-color-16',
+link: '',
 },
 {
   title: 'POKEDEX',
   image: image4,
-
-class: 'w-[500px] h-[500px] bg-color-18'
+  class: 'w-[500px] h-[500px] bg-color-18',
+  link: '',
 }
 
 ]

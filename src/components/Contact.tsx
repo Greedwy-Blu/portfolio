@@ -167,6 +167,13 @@ export function Contact(){
        </HeaderButton>
 
       </p>
+
+      <p className="flex justify-center space-x-4 mt-20">
+        <a className="font-bold text-2xl  text-bege-escuro-2  text-center">GITHUB</a>
+        <a className="font-bold text-2xl  text-bege-escuro-2  text-center">LINKEDIN</a>
+      </p>
+
+
     </section>
 
   )
