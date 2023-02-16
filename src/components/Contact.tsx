@@ -169,8 +169,8 @@ export function Contact(){
       </p>
 
       <p className="flex justify-center space-x-4 mt-20">
-        <a className="font-bold text-2xl  text-bege-escuro-2  text-center">GITHUB</a>
-        <a className="font-bold text-2xl  text-bege-escuro-2  text-center">LINKEDIN</a>
+        <a href="https://github.com/Greedwy-Blu" className="font-bold text-2xl  text-bege-escuro-2  text-center">GITHUB</a>
+        <a href="https://www.linkedin.com/in/gabriel-oliveira-alves-da-silva-2838b9266/" className="font-bold text-2xl  text-bege-escuro-2  text-center">LINKEDIN</a>
       </p>
 
 

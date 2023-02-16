@@ -8,7 +8,7 @@ import image2 from '../../assets/undraw_accept_tasks_re_09mv.svg'
 import image1 from '../../assets/Open Doodles - Giant Ice Cream.png'
 import arrowleft from '../../assets/iconmonstr-arrow-left-thin.svg'
 import arrowright from '../../assets/iconmonstr-arrow-right-thin.svg'
-
+import {Link} from 'react-router-dom'
 
 
 
@@ -31,13 +31,13 @@ const sliders = [
   title: 'NLW SETUP',
 image: image2,
 class: 'w-[500px] h-[500px] bg-color-16',
-link: '',
+link: 'nlw-setup-deploy.vercel.app',
 },
 {
   title: 'POKEDEX',
   image: image4,
   class: 'w-[500px] h-[500px] bg-color-18',
-  link: '',
+  link: 'pokedex-nufy.vercel.app/',
 }
 
 ]
@@ -108,8 +108,10 @@ var bysliderClass = function(object:any) {
   return object.class
 };
 
+var bysliderLink = function(object:any) {
+  return object.link
+};
 
-console.log(byslider(sliders[0]));
 
 
 return(
@@ -136,8 +138,9 @@ return(
 <div className="flex justify-center mr-40">
 
 
+
 <div className="translate-x-16 mt-48 ">
-        <a className="text-3xl font-bold text-yellow-bege">{bysliderTitle(sliders[index])}</a>
+         <a className="text-3xl font-bold text-yellow-bege">{bysliderTitle(sliders[index])}</a>
         </div>
 
 
@@ -148,7 +151,7 @@ return(
 
 
 
-
+   <a href={bysliderLink(sliders[index])}>
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             variants={variants}
@@ -158,7 +161,9 @@ return(
             className='slides mt-20 '
             key={index}
             custom={direction}
+
           >
+
 
 
 
@@ -175,11 +180,12 @@ return(
 
             </motion.div>
         </AnimatePresence>
-
+        </a>
         <button className='nextButton ml-5 mt-16' onClick={nextStep}>
   <img src={arrowright} alt="" className="h-6 w-6 "/>
 
   </button>
+
 
 </div>
 

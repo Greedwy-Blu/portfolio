@@ -14,23 +14,27 @@ const sliders = [
 {
   title: 'SQL NODE',
   image: imageAPi,
-  class: ' flex items-center w-[500px] h-[500px] bg-[#D96704]  '
+  class: ' flex items-center w-[500px] h-[500px] bg-[#D96704]  ',
+  link: 'https://github.com/Greedwy-Blu/sql_node',
 },
 {
   title: 'CADASTRE CURSOS',
   image: imageAPi,
-  class: 'flex items-center w-[500px] h-[500px] bg-[#C33A1A]  '
+  class: 'flex items-center w-[500px] h-[500px] bg-[#C33A1A]  ',
+  link: 'https://github.com/Greedwy-Blu/cadastre-seus-cursos',
 },
 {
   title: 'NODEJS COM TDD',
 image: imageAPi,
-class: 'flex items-center w-[500px] h-[500px] bg-color-24 '
+class: 'flex items-center w-[500px] h-[500px] bg-color-24 ',
+link: 'https://github.com/Greedwy-Blu/nodejsComTDD',
 },
 {
   title: 'GRAPHQL API',
   image: imageAPi,
 
-class: ' flex items-center w-[500px] h-[500px] bg-color-18'
+class: ' flex items-center w-[500px] h-[500px] bg-color-18',
+link: 'https://github.com/Greedwy-Blu/Graphql',
 }
 
 ]
@@ -101,8 +105,10 @@ var bysliderClass = function(object:any) {
   return object.class
 };
 
+var bysliderLink = function(object:any) {
+  return object.link
+};
 
-console.log(byslider(sliders[0]));
 
 
 return(
@@ -141,6 +147,7 @@ return(
 
 
 
+     <a href={bysliderLink(sliders[index])}>
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             variants={variants}
@@ -167,6 +174,7 @@ return(
 
             </motion.div>
         </AnimatePresence>
+        </a>
 
   <button className='nextButton  ml-5 mt-16' onClick={nextStep}>
   <img src={arrowright} alt="" className="h-4 w-4  "/>
