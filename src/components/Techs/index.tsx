@@ -35,15 +35,15 @@ useEffect(()=>{
         </p>
       </div>
 
-      <div className="mt-[300px]">
-        <motion.div ref={carousel} className="overflow-hidden" whileTap={{cursor: "grabbing"}}>
-          <motion.div drag="x" dragConstraints={{right: 0, left: -width}} className="flex  justify-center ">
+      <div className="mt-[160px]">
+        <motion.div ref={carousel} className="" whileTap={{cursor: "grabbing"}}>
+          <motion.div drag="x" dragConstraints={{right: 0, left: -width}} className="flex  justify-center ml-10 ">
 
             {sliders.map((image) =>{
               return(
                 <motion.div className="w-[500px] h[500px]  " key={image}>
-                  <div className="flex items-center bg-cinza-3 h-64 w-48 rounded-tl-[57px] rounded-tr-[57px] rounded-br-[64px] rounded-bl-[64px]">
-                  <img src={image} alt="" className="h-32 w-32 " />
+                  <div className="overflow-auto  flex items-end bg-cinza-3 h-72 w-48 rounded-tl-[100px] rounded-tr-[100px] rounded-br-[94px] rounded-bl-[94px] hover:outline outline-2 hover:scale-105 outline-yellow-bege">
+                  <img src={image} alt="" className="h-32 w-32 ml-5" />
                   </div>
                 </motion.div>
               )
