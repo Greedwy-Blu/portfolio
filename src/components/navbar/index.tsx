@@ -1,6 +1,5 @@
-import { Transition } from "@headlessui/react";
+
 import  image from "../../assets/gears.svg"
-import { useEffect, useState } from "react";
 
 
 const navigation = [

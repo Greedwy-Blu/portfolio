@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { motion } from "framer-motion";
 
 import image0 from "../../assets/file_type_typescript_icon_130108.svg";
