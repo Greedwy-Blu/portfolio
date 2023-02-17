@@ -12,15 +12,14 @@ import image11 from "../../assets/LogosPython.svg";
 import image12 from "../../assets/LogosMysqlIcon.svg";
 import image13 from "../../assets/LogosPostgresql.svg";
 import image14 from "../../assets/LogosNodejsIcon.svg";
-import image4 from '../../assets/LogosExpress.svg'
-import image3 from '../../assets/LogosDockerIcon.svg'
-import image2 from '../../assets/LogosGitIcon.svg'
-import image1 from '../../assets/LogosGraphql.svg'
+import image4 from "../../assets/LogosExpress.svg";
+import image3 from "../../assets/LogosDockerIcon.svg";
+import image2 from "../../assets/LogosGitIcon.svg";
+import image1 from "../../assets/LogosGraphql.svg";
 import { useEffect, useRef, useState } from "react";
 
 export function Techs() {
   const sliders = [
-
     image1,
     image2,
     image3,
@@ -36,16 +35,14 @@ export function Techs() {
     image12,
     image13,
     image14,
-
   ];
 
-  const [width, setwidth] =  useState(0)
-  const carousel = useRef()
+  const [width, setwidth] = useState(0);
+  const carousel = useRef();
 
-useEffect(()=>{
-  setwidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-},[])
-
+  useEffect(() => {
+    setwidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  }, []);
 
   return (
     <section className="mt-[250px] overflow-x-hidden ">
@@ -57,29 +54,35 @@ useEffect(()=>{
       </div>
 
       <div className="mt-[160px] ml-[1729px] ">
-        <motion.div ref={carousel} className="" whileTap={{cursor: "grabbing"}}>
-          <motion.div drag="x" dragConstraints={{right: 0, left: -width}} className="flex  justify-center
-          ">
-
-            {sliders.map((image) =>{
-              return(
-                <motion.div className="w-[500px] h[500px] mb-3  mx-3 outline outline-[0.5px] outline-bege-escuro-2 rounded-full p-2 hover:scale-105 " key={image}>
-
-
-                  <div className="overflow-auto   flex items-center  h-72 w-48 rounded-tl-[100px] rounded-tr-[100px] rounded-br-[94px] rounded-bl-[94px]
-                   outline-color-7  bg-color-19 shadow ">
-                  <img src={image} alt="" className="h-16 w-16 ml-16 " />
+        <motion.div
+          ref={carousel}
+          className=""
+          whileTap={{ cursor: "grabbing" }}
+        >
+          <motion.div
+            drag="x"
+            dragConstraints={{ right: 0, left: -width }}
+            className="flex  justify-center
+          "
+          >
+            {sliders.map((image) => {
+              return (
+                <motion.div
+                  className="w-[500px] h[500px] mb-3  mx-3 outline outline-[0.5px] outline-bege-escuro-2 rounded-full p-2 hover:scale-105 "
+                  key={image}
+                >
+                  <div
+                    className="overflow-auto   flex items-center  h-72 w-48 rounded-tl-[100px] rounded-tr-[100px] rounded-br-[94px] rounded-bl-[94px]
+                   outline-color-7  bg-color-19 shadow "
+                  >
+                    <img src={image} alt="" className="h-16 w-16 ml-16 " />
                   </div>
-
                 </motion.div>
-              )
-
+              );
             })}
-
           </motion.div>
         </motion.div>
       </div>
-
     </section>
   );
 }
