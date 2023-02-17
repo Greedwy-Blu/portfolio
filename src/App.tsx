@@ -17,11 +17,7 @@ function App() {
 
 <Navbar/>
 <Header/>
-
-
 <Scroll/>
-
-
 <FrontEnd/>
 <BackEnd/>
 <Techs/>

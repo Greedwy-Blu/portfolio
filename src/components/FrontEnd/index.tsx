@@ -43,6 +43,7 @@ link: 'https://nlw-setup-deploy.vercel.app',
 ]
 
 
+
 const variants = {
   initial: direction => {
     return {
