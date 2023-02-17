@@ -1,4 +1,4 @@
-export function Footer() {
+function Footer() {
   return (
     <footer className="flex  justify-center items-center w-full max-h-14  bg-[#01354996]  translate-y-32">
       <div className="flex ">
@@ -11,3 +11,5 @@ export function Footer() {
     </footer>
   );
 }
+
+export default Footer

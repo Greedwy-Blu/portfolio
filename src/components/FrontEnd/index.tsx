@@ -70,7 +70,7 @@ const variants = {
   },
 };
 
-export function FrontEnd() {
+ function FrontEnd() {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(0);
 
@@ -156,3 +156,5 @@ export function FrontEnd() {
     </section>
   );
 }
+
+export default FrontEnd

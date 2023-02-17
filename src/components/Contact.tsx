@@ -3,7 +3,7 @@ import { useState, Fragment } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
 
-export function Contact() {
+ function Contact() {
   let [isOpen, setIsOpen] = useState(false);
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
@@ -219,3 +219,6 @@ export function Contact() {
     </section>
   );
 }
+
+
+export default Contact

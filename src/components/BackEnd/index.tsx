@@ -67,7 +67,7 @@ const variants = {
   },
 };
 
-export function BackEnd() {
+function BackEnd() {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(0);
 
@@ -154,3 +154,5 @@ export function BackEnd() {
     </section>
   );
 }
+
+export default BackEnd

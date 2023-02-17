@@ -1,4 +1,4 @@
-export function Scroll() {
+ function Scroll() {
   return (
     <section className="flex items-center justify-center mt-[400px] animate-bounce">
       <p className="rotate-90 text-xl text-bege-escuro-2 font-bold ">
@@ -10,3 +10,5 @@ export function Scroll() {
     </section>
   );
 }
+
+export default Scroll

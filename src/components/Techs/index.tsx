@@ -18,7 +18,7 @@ import image2 from "../../assets/LogosGitIcon.svg";
 import image1 from "../../assets/LogosGraphql.svg";
 import { useEffect, useRef, useState } from "react";
 
-export function Techs() {
+function Techs() {
   const sliders = [
     image1,
     image2,
@@ -86,3 +86,6 @@ export function Techs() {
     </section>
   );
 }
+
+export default Techs
+

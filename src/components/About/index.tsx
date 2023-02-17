@@ -4,7 +4,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import emailjs from "@emailjs/browser";
 
 import { Modal } from "antd";
-export function Header() {
+ function Header() {
   let [isOpen, setIsOpen] = useState(false);
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
@@ -186,3 +186,5 @@ export function Header() {
     </section>
   );
 }
+
+export default Header
