@@ -31,13 +31,13 @@ const sliders = [
   title: 'NLW SETUP',
 image: image2,
 class: 'w-[500px] h-[500px] bg-color-16',
-link: 'nlw-setup-deploy.vercel.app',
+link: 'https://nlw-setup-deploy.vercel.app',
 },
 {
   title: 'POKEDEX',
   image: image4,
   class: 'w-[500px] h-[500px] bg-color-18',
-  link: 'pokedex-nufy.vercel.app/',
+  link: 'https://pokedex-nufy.vercel.app/',
 }
 
 ]
