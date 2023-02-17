@@ -1,11 +1,10 @@
-import { useState } from "react";
-import { Navbar } from "./components/Navbar";
-import { Header } from "./components/About";
+import { Navbar } from "./components/navbar";
+import { Header } from "./components/about";
 import { Footer } from "./components/Footer";
-import { FrontEnd } from "./components/FrontEnd";
+import { FrontEnd } from "./components/frontend";
 import { Scroll } from "./components/scroll";
-import { BackEnd } from "./components/BackEnd";
-import { Techs } from "./components/Techs";
+import { BackEnd } from "./components/backend";
+import { Techs } from "./components/techs";
 import { Contact } from "./components/Contact";
 
 function App() {
