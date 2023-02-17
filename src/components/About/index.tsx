@@ -1,11 +1,39 @@
 import {Fragment, useState } from "react";
 import { Border, HeaderButton, ImgProfile } from "./styled";
 import { Dialog, Transition } from "@headlessui/react";
+import emailjs from '@emailjs/browser'
 
 
 import { Modal } from 'antd';
 export function Header(){
   let [isOpen, setIsOpen] = useState(false);
+  const [subject, setSubject] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
+  function sendEmail(e){
+    e.preventDefault();
+    if(subject === '' || email === '' || message === ''){
+      alert("Preencha todos os campos")
+    }
+
+    const templateParams ={
+      subject: subject,
+      message: message,
+      email: email
+    }
+
+    emailjs.send("service_ujwnjdm", "template_zr3zk5f", templateParams , "iA81tHlMgxyuHOSsr" )
+    .then((response)=>{
+      console.log("Email enviado", response.status, response.text)
+      setSubject('')
+      setEmail('')
+      setMessage('')
+    },(err)=>{
+      console.log("EROO",err)
+    })
+
+  }
 
   function closeModal() {
     setIsOpen(false);
@@ -90,16 +118,27 @@ export function Header(){
 
                 <div className="mt-2 border-t w-full border-bege-escuro text-bege-escuro">
 
+                  <form onSubmit={sendEmail}>
+
                   <p className="text-sm text-gray-500 pt-2 w-full">
-                  <input type="text" className="w-full h-10  bg-[#015d6b] border-none" placeholder="Subject" />
+                  <input type="text" className="w-full h-10  bg-[#015d6b] border-none" placeholder="Subject"
+                  onChange={(e) => setSubject(e.target.value)}
+                  value={subject}
+                  />
                   </p>
 
                   <p className="text-sm text-gray-500 pt-2">
-                  <input type="email" className="w-full  h-10  bg-[#015d6b] border-none" placeholder="Email" />
+                  <input type="email" className="w-full  h-10  bg-[#015d6b] border-none" placeholder="Email"
+                   onChange={(e) => setEmail(e.target.value)}
+                   value={email}
+                    />
                   </p>
 
                   <p className="text-sm text-gray-500 pt-2 w-full">
-                  <textarea  className="w-full  h-40  bg-[#015d6b] border-none " placeholder="Message"/>
+                  <textarea  className="w-full  h-40  bg-[#015d6b] border-none " placeholder="Message"
+                    onChange={(e) => setMessage(e.target.value)}
+                    value={message}
+                  />
                   </p>
                   <p className="flex justify-end space-x-4 mt-3">
 
@@ -107,6 +146,8 @@ export function Header(){
                     <button className="w-24 h-7 bg-bege-escuro-2 text-bege-claro">Submit</button>
 
                   </p>
+
+                  </form>
 
 
                 </div>
