@@ -1,9 +1,9 @@
 import image from "../../assets/gears.svg";
 
 const navigation = [
-  { name: "Frontend", href: "#" },
-  { name: "Backend", href: "#" },
-  { name: "Techs", href: "#" },
+  { name: "Frontend", href: "#frontend" },
+  { name: "Backend", href: "#backend" },
+  { name: "Techs", href: "#techs" },
 ];
 
 export function Navbar() {

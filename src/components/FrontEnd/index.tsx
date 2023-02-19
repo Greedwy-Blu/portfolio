@@ -107,7 +107,7 @@ const variants = {
   };
 
   return (
-    <section className="mt-[570px]  ">
+    <section className="mt-[570px]   " id="frontend">
       <div className=" ml-12 w-11/12">
         <p className="flex items-center space-x-3 font-bold not-italic">
           <a className="text-4xl text-bege-escuro-2">FRONTEND</a>
